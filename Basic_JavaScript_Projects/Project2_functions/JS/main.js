@@ -9,7 +9,7 @@ function changeColor(newColor) {   //This utilizes the paragraph element
     elem.style.color = newColor;
 }
 
-function My_Function() {            //This is the concatenate string
+function myFunction() {            //This is the concatenate string
     var sentence = "I am learning";
     sentence += " a lot from this JavaScrip course!";
     document.getElementById("Concatenate").innerHTML = sentence;
