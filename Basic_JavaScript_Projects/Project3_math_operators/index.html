@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <title>Math Operators</title>
     <script src="JS/main.js"></script>
-  </head>
-  <body>
-    <p id="Math" onclick="performOperation()">Click me to perform an addition operation</p>
-    <script>
-      function performOperation() {
-        var num1 = 5;
-        var num2 = 10;
-        var result = num1 + num2;
-        document.getElementById("Math").innerHTML = "The result of the addition operation is: " + result;
-      }
-    </script>
-  </body>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <button onclick="addition_Function()">Click Here</button> <p id="addition_result"></p>
+    <button onclick="subtraction_Function()">Click Here</button> <p id="subtraction_result"></p>
+    <button onclick="multiplication()">Click Here</button> <p id="multiplication_result"></p>
+    <button onclick="division()">Click Here</button> <p id="division_result"></p>
+    <button onclick="more_Math()">Click Here</button> <p id="more_math_result"></p>
+    <button onclick="modulus_Operator()">Click Here</button> <p id="modulus_result"></p>
+    <button onclick="negation_Operator()">Click Here</button> <p id="negation_result"></p>
+    <button onclick="getRndInteger()">Click Here</button> <p id="random_number_result"></p>
+    <p id="math_result">This is index 3</p>
+  
+</body>
 </html>
+
+
+
+
