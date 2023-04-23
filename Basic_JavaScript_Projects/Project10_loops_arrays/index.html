@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+    <body>
+        <p id="Loop"></p>
+        <button onclick="count_To_Ten()">Click here to execute the loop.</button>
+        <h1>JavaScript Strings</h1>
+        <h2>The length Property</h2>
+
+        <p>The length property returns the length of a string.</p>
+
+        <p>Find the length of "Hello World!":</p>
+
+        <p id="demo"></p>
+
+        <script>
+        let text = "Hello World!";
+        let length = text.length;
+
+        document.getElementById("demo").innerHTML = length;
+        </script>
+        <p id="List_of_Instruments"></p>
+        <button onclick="for_Loop()">Click here.</button>
+        <p id="Cat"></p>
+        <button onclick="cat_pics()">Click here.</button>
+        <p id="Constant"></p>
+        <button onclick="constant_function()">Click here!</button>
+        <script>
+            document.getElementById("demo").innerHTML = myFunction("John");
+            
+            function myFunction(name) {
+              return "Hello " + name;
+            }
+        </script>
+        <p id="Car_Object"></p>
+
+        <h2>JavaScript Loops</h2>
+
+        <p>A loop with a <b>break</b> statement.</p>
+
+        <p id="demo"></p>
+
+        <script>
+        let text = "";
+        for (let i = 0; i < 10; i++) {
+        if (i === 3) { break; }
+        text += "The number is " + i + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+        </script>
+
+        <h2>JavaScript Loops</h2>
+
+        <p>A loop with a <b>continue</b> statement.</p>
+
+        <p>A loop which will skip the step where i = 3.</p>
+
+        <p id="demo"></p>
+
+        <script>
+        let text = "";
+        for (let i = 0; i < 10; i++) {
+        if (i === 3) { continue; }
+        text += "The number is " + i + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+        </script>
+    <script src="JS/main.js"></script>
+    </body>
+</html> 
