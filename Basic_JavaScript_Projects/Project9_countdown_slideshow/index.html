@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flower Tulips Slideshow</title>
+    <script src="JS/main.js"></script>
+    <link rel="stylesheet" href="CSS/main.css">
+
+  </head>
+  <body>
+    <header>
+      <h1>Flower Tulips Slideshow</h1>
+    </header>
+    <main>
+      <section id="countdown">
+        <h2>Countdown to Spring</h2>
+        <p id="countdown-timer"></p>
+      </section>
+      <section id="slideshow">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="images/tulips.jpg">
+          </div>
+          <div class="mySlides fade">
+            <img src="images/tulips_2.jpg">
+          </div>
+          <div class="mySlides fade">
+            <img src="images/tulips_3.jpg">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+    </main>
+   </body>
+</html>
