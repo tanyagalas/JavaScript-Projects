@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas Gradient Background</title>
+	<style>
+		canvas {
+			border: 1px solid rgb(137, 138, 138);
+		}
+	</style>
+</head>
+<body>
+	<canvas id="myCanvas" width="500" height="500"></canvas>
+
+	<script>
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+
+		// Create a linear gradient that goes from left to right
+		var gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+		gradient.addColorStop(0, "#FF6347"); // Red
+		gradient.addColorStop(0.25, "#FFA07A"); // Light Salmon
+		gradient.addColorStop(0.5, "#FFFF00"); // Yellow
+		gradient.addColorStop(0.75, "#98FB98"); // Pale Green
+		gradient.addColorStop(1, "#00BFFF"); // Deep Sky Blue
+
+		// Set the fill style to the gradient and fill the entire canvas
+		ctx.fillStyle = gradient;
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+	</script>
+</body>
+</html>
