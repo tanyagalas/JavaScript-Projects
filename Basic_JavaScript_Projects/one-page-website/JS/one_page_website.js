@@ -38,3 +38,16 @@ function openModal() {
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
+  // Get all the images with the data-modal attribute
+var images = document.querySelectorAll('[data-modal]');
+
+// Loop through the images and add a click event listener to each one
+images.forEach(function(image) {
+  image.addEventListener('click', function() {
+    // Open the Modal
+    document.getElementById("myModal").style.display = "block";
+    
+    // Call the currentSlide function with the slide index corresponding to the clicked image
+    currentSlide(parseInt(image.dataset.slide));
+  });
+});
