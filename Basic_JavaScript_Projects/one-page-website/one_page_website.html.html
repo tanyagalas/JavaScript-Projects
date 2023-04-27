@@ -25,19 +25,21 @@
 		<div id="home">
 			<div>
 				<div>
-					<span>Explore the beauty of the Caribbean Islands</span>
+					<span style="color: rgb(0, 0, 0); border: 5px solid rgb(107, 197, 235); display: block; text-align: center;">Explore the beauty of the Caribbean Islands</span>
 				</div>
 			</div>
 		</div>
 		<!--END HOME -->
 		
-		<!-- GALLERY -->
-		<section>
-			<div id="gallery">
-				<h1>Gallery</h1>
-				<img src="images/island_2.png" class="img-hover-zoom" data-modal="modal-1">
-  				<img src="images/island_3.png" class="img-hover-zoom" data-modal="modal-2">
+		<!-- Images used to open the lightbox -->
+		<div class="row">
+			<div class="column">
+	  			<img src="images/island_2.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
 			</div>
+			<div class="column">
+	  			<img src="images/island_3.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			</div>
+		</div>
 
 			<!-- Modal HTML -->
 			<div id="modal-1" class="modal">
@@ -49,20 +51,42 @@
 			  </div>
 			</div>
 
-			<div id="modal-2" class="modal">
-			  <div class="modal-content">
-			    <span class="close">&times;</span>
-			    <img src="images/island_3.png">
-			    <div id="caption">
-			      <p class="text">Beautiful Caribbean beach</p>
-			    </div>
-			  </div>
-			</div>
-			<!-- END Modal HTML -->
-		</section>
-		<!-- END GALLERY -->
+			<!-- The Modal/Lightbox -->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+  
+	  			<div class="mySlides">
+				<div class="numbertext">1 / 2</div>
+				<img src="images/island_2.png" style="width:100%">
+	  		</div>
+  
+	  			<div class="mySlides">
+				<div class="numbertext">2 / 2</div>
+				<img src="images/island_3.png" style="width:100%">
+	  		</div>
+			
+			<!-- Next/previous controls -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 		
-		<!-- RSVP -->
+			<!-- Caption text -->
+			<div class="caption-container">
+			  <p id="caption"></p>
+			</div>
+		
+			<!-- Thumbnail image controls -->
+			<div class="column">
+			  <img class="demo" src="images/island_2.png" onclick="currentSlide(1)" alt="Island">
+			</div>
+		
+			<div class="column">
+			  <img class="demo" src="images/island_3.png" onclick="currentSlide(2)" alt="white beach">
+			</div>
+		</div>
+	</div>
+		
+	<!-- RSVP -->
 		<section>
 			<div id="contact">
 				<div>
